@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_kg_hide_menu_form_inherit" model="ir.ui.view">
+            <field name="name">group_kg_hide_menu</field>
+            <field name="model">res.groups</field>
+            <field name="inherit_id" ref="base.view_groups_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Hide Menu">
+                        <tree>
+                            <field name="hide_group_menu_access_ids" options="{'no_create':1,'no_create_edit':1}"/>
+                        </tree>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
