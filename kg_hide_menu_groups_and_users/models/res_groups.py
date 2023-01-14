@@ -12,5 +12,5 @@ from odoo import fields, models, api
 class ResGroups(models.Model):
     _inherit = 'res.groups'
 
-    hide_group_menu_access_ids = fields.Many2many('ir.ui.menu', 'ir_ui_hide_menu_rel', 'uid', 'menu_id',
+    hide_group_menu_access_ids = fields.Many2many('ir.ui.menu', 'ir_ui_hide_menu_group_rel', 'uid', 'menu_id',
                                             string='Hide Access Menu')
