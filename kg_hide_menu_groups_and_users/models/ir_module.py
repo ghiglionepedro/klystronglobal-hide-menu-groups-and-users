@@ -19,12 +19,9 @@ class Menu(models.Model):
         if self.env.user.hide_menu_access_ids and not self.env.user.has_group('base.group_system'):
             for rec in self.env.user.hide_menu_access_ids:
                 menus.discard(rec.id)
-            return menus
         
         for group in self.env.user.groups_id:
             if group.hide_group_menu_access_ids:
                 for rec in group.hide_group_menu_access_ids:
-                    menus.discard(rec.id)
-                return menus 
-            
+                    menus.discard(rec.id)            
         return menus
