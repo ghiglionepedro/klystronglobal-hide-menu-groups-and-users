@@ -7,12 +7,12 @@
 
 
 {
-    'name': "Hide Menu",
+    'name': "hide menu groups and users",
     'summary': """
-        Restrict Menu Items from Specific Users""",
+        Restrict Menu Items from Specific Users and groups""",
     'description': """
-        Restrict Menu Items from Specific Users""",
-    'author': 'Klystron Global',
+        Restrict Menu Items from Specific Users and groups""",
+    'author': 'core: Klystron Global. Extend: Ghiglione Pedro Matias',
     'maintainer':'Kiran K',
     'website': "https://www.klystronglobal.com/",
     'images': ["static/description/banner.png"],
