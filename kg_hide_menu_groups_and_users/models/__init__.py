@@ -6,5 +6,6 @@
 # https://www.klystronglobal.com/
 
 
+from . import res_groups
 from . import res_users
 from . import ir_module

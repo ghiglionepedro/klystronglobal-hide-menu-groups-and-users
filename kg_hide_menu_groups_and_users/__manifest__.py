@@ -22,6 +22,8 @@
     'depends': [
         'base'
     ],
-    'data': ['views/res_users.xml',
+    'data': [
+        'views/res_users.xml',
+        'views/res_groups.xml',
              ],
 }
